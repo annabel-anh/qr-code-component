@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.model {
+    position: absolute;
+    opacity: 30%;
+}
+
+body {
+    background-color: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    background-color: var(--white);
+    /*background-color: red;*/
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 20px -15px var(--grayish-blue);
+
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.qr-image {
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+.title {
+    color: var(--dark-blue);
+
+    font-size: 1.4em;
+    font-weight: 700;
+
+    padding: 10px;
+    width: 96%;
+}
+
+.action-call {
+    color: var(--grayish-blue);
+
+    font-size: 0.96em;
+
+    padding: 4px;
+    width: 85%;
+}
